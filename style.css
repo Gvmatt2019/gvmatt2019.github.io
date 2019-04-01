@@ -1,6 +1,6 @@
 body{
 	font-family: "Apple Chancery", cursive;
-	color:#003366;
+	color:#470066;
        	}
 
 h1 {
@@ -15,16 +15,4 @@ table {
 	border-collapse: collapse;
 	cellspacing: 0 px;
         }
-
-td {
-	border: 1px solid #ffffff;
-	text-align:center;
-	background-color:#9FB6CD; 
-    	}
-
-th {
-	text-align:center;
-	color:#ffffff;
-	background-color:#003366;
-   	}
 
