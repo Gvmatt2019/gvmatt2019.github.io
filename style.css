@@ -1,5 +1,5 @@
-   body{
-	font-family: "Trebuchet MS ", serif;
+body {
+	font-family: "Trebuchet MS", serif;
 	color:#003366;
        	}
 
@@ -15,4 +15,17 @@ table {
 	border-collapse: collapse;
 	cellspacing: 0 px;
         }
+
+td {
+	border: 1px solid #ffffff;
+	text-align:center;
+	background-color:#9FB6CD; 
+    	}
+
+th {
+	text-align:center;
+	color:#ffffff;
+	background-color:#003366;
+   	}
+
 
