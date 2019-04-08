@@ -1,3 +1,4 @@
+<script type = "text/javascript">
 // 1. Create the button
 var button = document.createElement("button");
 button.innerHTML = "Do Something";
@@ -10,3 +11,4 @@ body.appendChild(button);
 button.addEventListener ("click", function() {
   alert("did something");
 });
+</script>
