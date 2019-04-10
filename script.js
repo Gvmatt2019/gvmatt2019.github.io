@@ -10,5 +10,7 @@ body.appendChild(button);
 // 3. Add event handler
 button.addEventListener ("click", function() {
   alert("did something");
+  
+<button onclick="myFunction()">Click me</button>
 });
 </script>
