@@ -1,17 +1,23 @@
-var currentTime = new Date();
-var hours = currentTime.getHours();
-var minutes = currentTime.getMinutes();
-var seconds = currentTime.getSeconds();
-            var suffix = "AM";
-            if (minutes < 10)
-                minutes = "0" + minutes;
-            if (hours >= 12) {
-                suffix = "PM";
-                hours = hours - 12;
-            }
-            if (hours == 0) {
-                hours = 12;
-            }
-document.write("<b><div id='d1'>" + hours + ":" +  minutes + ":" +  seconds + " " + suffix + "</div></b>");
- if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
+const secondHand = document.querySelector('.second-hand');
+          const minsHand = document.querySelector('.min-hand');
+          const hourHand = document.querySelector('.hour-hand');
+          
+          function setDate() {
+              const now = new Date();
+              const seconds = now.getSeconds();
+              const secondsDegrees = ((seconds / 60) * 360) + 90;
+              secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+              
+              const mins = now.getMinutes();
+              const minsDegrees = ((mins / 60) * 360) + ((seconds/60)*6) + 90;
+              minsHand.style.transform = `rotate(${minsDegrees}deg)`;
+              
+              const hour = now.getHours();
+              const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
+              hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+        }
+
+        setInterval(setDate, 1000);
+
+        setDate();
+
